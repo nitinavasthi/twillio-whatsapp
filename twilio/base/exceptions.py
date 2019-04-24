@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 
-from six import u
+# from six import u
 
 
 class TwilioException(Exception):
@@ -30,19 +30,19 @@ class TwilioRestException(TwilioException):
         """ Try to pretty-print the exception, if this is going on screen. """
 
         def red(words):
-            return u("\033[31m\033[49m%s\033[0m") % words
+         #   return u("\033[31m\033[49m%s\033[0m") % words
 
         def white(words):
-            return u("\033[37m\033[49m%s\033[0m") % words
+          #  return u("\033[37m\033[49m%s\033[0m") % words
 
         def blue(words):
-            return u("\033[34m\033[49m%s\033[0m") % words
+          #  return u("\033[34m\033[49m%s\033[0m") % words
 
         def teal(words):
-            return u("\033[36m\033[49m%s\033[0m") % words
+          #  return u("\033[36m\033[49m%s\033[0m") % words
 
         def get_uri(code):
-            return "https://www.twilio.com/docs/errors/{0}".format(code)
+           # return "https://www.twilio.com/docs/errors/{0}".format(code)
 
         # If it makes sense to print a human readable error message, try to
         # do it. The one problem is that someone might catch this error and
