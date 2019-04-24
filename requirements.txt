@@ -6,3 +6,7 @@ requests>=2.0.0
 socksipy-branch
 PyJWT==1.4.2
 twine
+#added new
+Flask==0.11
+Jinja2==2.8
+gunicorn==19.6.0
